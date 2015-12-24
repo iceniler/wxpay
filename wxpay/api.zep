@@ -21,7 +21,7 @@ class Api extends Option
 
     protected sign;
 
-    public static function make(array config) -> <\Wxpay\Api>
+    public static function make(array config) -> <\WXPay\Api>
     {
         var api, class_name;
         let class_name = get_called_class();
@@ -29,7 +29,7 @@ class Api extends Option
         return api;
     }
 
-    public function signWith(<\WXPay\Config> config = null) ->  <\Wxpay\Api>
+    public function signWith(<\WXPay\Config> config = null) ->  <\WXPay\Api>
     {
         var field, group_through, item, messages;
 

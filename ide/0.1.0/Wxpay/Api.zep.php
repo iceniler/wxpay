@@ -32,13 +32,13 @@ class Api extends \WXPay\Option
 
     /**
      * @param array $config 
-     * @return \Wxpay\Api 
+     * @return \WXPay\Api 
      */
     public static function make($config) {}
 
     /**
      * @param mixed $config 
-     * @return \Wxpay\Api 
+     * @return \WXPay\Api 
      */
     public function signWith(\WXPay\Config $config = null) {}
 

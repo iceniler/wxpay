@@ -11,6 +11,7 @@ if test "$PHP_WXPAY" = "yes"; then
 	AC_DEFINE(HAVE_WXPAY, 1, [Whether you have Wxpay])
 	wxpay_sources="wxpay.c kernel/main.c kernel/memory.c kernel/exception.c kernel/hash.c kernel/debug.c kernel/backtrace.c kernel/object.c kernel/array.c kernel/extended/array.c kernel/string.c kernel/fcall.c kernel/extended/fcall.c kernel/require.c kernel/file.c kernel/operators.c kernel/math.c kernel/concat.c kernel/variables.c kernel/filter.c kernel/iterator.c kernel/time.c kernel/exit.c wxpay/option.zep.c
 	wxpay/api.zep.c
+	wxpay/credential.zep.c
 	wxpay/api/app/closeorder.zep.c
 	wxpay/api/app/createorder.zep.c
 	wxpay/api/app/createrefund.zep.c
@@ -35,6 +36,9 @@ if test "$PHP_WXPAY" = "yes"; then
 	wxpay/api/native/queryrefund.zep.c
 	wxpay/api/native/shorturl.zep.c
 	wxpay/config.zep.c
+	wxpay/credential/app.zep.c
+	wxpay/credential/jsapi.zep.c
+	wxpay/credential/native1.zep.c
 	wxpay/library/util.zep.c "
 	PHP_NEW_EXTENSION(wxpay, $wxpay_sources, $ext_shared,, )
 	PHP_SUBST(WXPAY_SHARED_LIBADD)

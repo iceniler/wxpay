@@ -29,6 +29,7 @@
 
 zend_class_entry *wxpay_option_ce;
 zend_class_entry *wxpay_api_ce;
+zend_class_entry *wxpay_credential_ce;
 zend_class_entry *wxpay_api_app_closeorder_ce;
 zend_class_entry *wxpay_api_app_createorder_ce;
 zend_class_entry *wxpay_api_app_createrefund_ce;
@@ -53,6 +54,9 @@ zend_class_entry *wxpay_api_native_queryorder_ce;
 zend_class_entry *wxpay_api_native_queryrefund_ce;
 zend_class_entry *wxpay_api_native_shorturl_ce;
 zend_class_entry *wxpay_config_ce;
+zend_class_entry *wxpay_credential_app_ce;
+zend_class_entry *wxpay_credential_jsapi_ce;
+zend_class_entry *wxpay_credential_native1_ce;
 zend_class_entry *wxpay_library_util_ce;
 
 ZEND_DECLARE_MODULE_GLOBALS(wxpay)
@@ -81,6 +85,7 @@ static PHP_MINIT_FUNCTION(wxpay)
 	REGISTER_INI_ENTRIES();
 	ZEPHIR_INIT(WXPay_Option);
 	ZEPHIR_INIT(WXPay_Api);
+	ZEPHIR_INIT(WXPay_Credential);
 	ZEPHIR_INIT(WXPay_Api_App_CloseOrder);
 	ZEPHIR_INIT(WXPay_Api_App_CreateOrder);
 	ZEPHIR_INIT(WXPay_Api_App_CreateRefund);
@@ -105,6 +110,9 @@ static PHP_MINIT_FUNCTION(wxpay)
 	ZEPHIR_INIT(WXPay_Api_Native_QueryRefund);
 	ZEPHIR_INIT(WXPay_Api_Native_Shorturl);
 	ZEPHIR_INIT(WXPay_Config);
+	ZEPHIR_INIT(WXPay_Credential_App);
+	ZEPHIR_INIT(WXPay_Credential_Jsapi);
+	ZEPHIR_INIT(WXPay_Credential_Native1);
 	ZEPHIR_INIT(WXPay_Library_Util);
 
 #if PHP_VERSION_ID < 50500

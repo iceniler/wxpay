@@ -6,6 +6,7 @@
 
 #include "wxpay/option.zep.h"
 #include "wxpay/api.zep.h"
+#include "wxpay/credential.zep.h"
 #include "wxpay/api/app/closeorder.zep.h"
 #include "wxpay/api/app/createorder.zep.h"
 #include "wxpay/api/app/createrefund.zep.h"
@@ -30,6 +31,9 @@
 #include "wxpay/api/native/queryrefund.zep.h"
 #include "wxpay/api/native/shorturl.zep.h"
 #include "wxpay/config.zep.h"
+#include "wxpay/credential/app.zep.h"
+#include "wxpay/credential/jsapi.zep.h"
+#include "wxpay/credential/native1.zep.h"
 #include "wxpay/library/util.zep.h"
 
 #endif

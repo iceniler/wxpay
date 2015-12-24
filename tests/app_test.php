@@ -5,9 +5,9 @@ use \Wxpay\Api\App\QueryOrder as AppQueryOrder;
 use \Wxpay\Api\App\CloseOrder as AppCloseOrder;
 
 $config = new \Wxpay\Config(array(
-    'app_id'      => 'wx9682fc7c2ab8xxxx',
-    'mch_id'      => '126356xxxx',
-    'app_key'     => 'bdc9a212a1d74b793eea977fd7f7xxxx',
+    'app_id'      => 'wx9682fc7c2ab854ef',
+    'mch_id'      => '1263567101',
+    'app_key'     => 'bdc9a212a1d74b793eea977fd7f7b299',
     'client_cert' => dirname(__FILE__) . '/apiclient_cert.pem',
     'client_key'  => dirname(__FILE__) . '/apiclient_key.pem',
 ));

@@ -11,11 +11,12 @@ if (PHP_WXPAY != "no") {
     AC_DEFINE("ZEPHIR_USE_PHP_JSON", 1, "Whether PHP json extension is present at compile time");
   }
   
-  ADD_SOURCES(configure_module_dirname + "/wxpay", "option.zep.c api.zep.c config.zep.c", "wxpay");
+  ADD_SOURCES(configure_module_dirname + "/wxpay", "option.zep.c api.zep.c credential.zep.c config.zep.c", "wxpay");
 	ADD_SOURCES(configure_module_dirname + "/wxpay/api/app", "closeorder.zep.c createorder.zep.c createrefund.zep.c queryorder.zep.c queryrefund.zep.c", "wxpay");
 	ADD_SOURCES(configure_module_dirname + "/wxpay/api/jsapi", "closeorder.zep.c createorder.zep.c createrefund.zep.c queryorder.zep.c queryrefund.zep.c", "wxpay");
 	ADD_SOURCES(configure_module_dirname + "/wxpay/api/micropay", "autocodetoopenid.zep.c closeorder.zep.c createorder.zep.c createrefund.zep.c queryorder.zep.c queryrefund.zep.c shorturl.zep.c", "wxpay");
 	ADD_SOURCES(configure_module_dirname + "/wxpay/api/native", "closeorder.zep.c createorder.zep.c createrefund.zep.c queryorder.zep.c queryrefund.zep.c shorturl.zep.c", "wxpay");
+	ADD_SOURCES(configure_module_dirname + "/wxpay/credential", "app.zep.c jsapi.zep.c native1.zep.c", "wxpay");
 	ADD_SOURCES(configure_module_dirname + "/wxpay/library", "util.zep.c", "wxpay");
   ADD_FLAG("CFLAGS_WXPAY", "/D ZEPHIR_RELEASE");
 }
